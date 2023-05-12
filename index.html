@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Mulish&display=swap" rel="stylesheet">
+
+
+    <title>Petiscarinho</title>
+</head>
+<body>
+    <h1 class="main_titulo">Petiscarinho</h1>
+
+    <div class="petiscarinho">
+
+        <div class="cardapio">
+            <h2  class="titulo">Cardápio do Petiscarinho</h2>
+
+        <div class="mae_produtos" id="maeProdutos">
+
+            <div class="produto">
+                <div class="mae_img_produto">
+                    <img src="https://i.pinimg.com/564x/9b/c5/d6/9bc5d609e8f3ce7e74a29ae31b94ca65.jpg" class="img_produto">
+                </div>
+                <div class="txt_produto">
+
+                    <p class="nome_produto" id="nomeSandocao">Sandocão</p>
+                    <p class="preco_produto" id="precoSandocao">R$ 1,70</p>
+
+                    <div class="btn_produto">
+
+                        <button class="btn_quero" id="btnSandocao" onclick="foiClicado(0)">Eu quero!!</button>
+
+                        <button class="btn_maisUm" id="sandocao_maisum" onclick="foiClicado(0)">+1</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="mae_img_produto">
+                    <img src="https://i.pinimg.com/564x/ef/7b/47/ef7b47585cac64c5bf87e1139b992409.jpg" class="img_produto">
+                </div>
+                <div class="txt_produto">
+                    <p class="nome_produto" id="nomeUrsovo">Ursovo</p>
+                    <p class="preco_produto" id="precoUrsovo">R$ 2,30</p>
+                    <div class="btn_produto">
+                        <button class="btn_quero" id="btnUrsovo" onclick="foiClicado(1)">Eu quero!!</button>
+                        <button class="btn_maisUm" onclick="foiClicado(1)">+1</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="mae_img_produto">
+                    <img src="https://i.pinimg.com/564x/54/1d/8d/541d8d7a496ef01d70b77d299e9ea952.jpg" class="img_produto">
+                </div>
+                <div class="txt_produto">
+                    <p class="nome_produto">Sapoiche</p>
+                    <p class="preco_produto">R$ 2,60</p>
+                    <div class="btn_produto">
+                        <button class="btn_quero"onclick="foiClicado(2)">Eu quero!!</button>
+                        <button class="btn_maisUm" onclick="foiClicado(2)">+1</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="mae_img_produto">
+                    <img src="https://i.pinimg.com/564x/28/5e/3f/285e3f56c7aa6af4a4080cb4011ec6a2.jpg" class="img_produto">
+                </div>
+                <div class="txt_produto">
+                    <p class="nome_produto">Hamburgurso</p>
+                    <p class="preco_produto">R$ 2,40</p>
+                    <div class="btn_produto">
+                        <button class="btn_quero" onclick="foiClicado(3)">Eu quero!!</button>
+                        <button class="btn_maisUm" onclick="foiClicado(3)">+1</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="mae_img_produto">
+                    <img src="https://i.pinimg.com/564x/8a/88/30/8a8830f43b5bfcf6460567c9f65c74c4.jpg" class="img_produto">
+                </div>
+                <div class="txt_produto">
+                    <p class="nome_produto">Pizza Boo</p>
+                    <p class="preco_produto">R$ 2,50</p>
+                    <div class="btn_produto">
+                        <button class="btn_quero" onclick="foiClicado(4)">Eu quero!!</button>
+                        <button class="btn_maisUm" onclick="foiClicado(4)">+1</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="mae_img_produto">
+                    <img src="https://i.pinimg.com/564x/78/9f/72/789f7255410482de987ed94258c4f18e.jpg" alt="" class="img_produto">
+                </div>
+                <div class="txt_produto">
+                    <p class="nome_produto">Gatoroons</p>
+                    <p class="preco_produto">R$ 1,00</p>
+                    <div class="btn_produto">
+                        <button class="btn_quero" onclick="foiClicado(5)">Eu quero!!</button>
+                        <button class="btn_maisUm" onclick="foiClicado(5)">+1</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+        <div class="comanda">
+            <h2 class="titulo">Comanda</h2>
+
+            <div class="produtos_comanda"></div>
+
+            
+
+            <div class="pagamento">
+                <p class="total">Total a Pagar:  
+                    <span class="calculoFinal"></span>
+                </p>
+                <button class="pagar" onclick="clean()">Pagar</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="feitoPor">
+        <a href="#" class="feitoPorC">Feito por Criativaria 💖</a>
+        <a href="https://doceazedo.com" target="_blank"><img src="imgs/doceEsteveAqui.png" alt="" class="doce"></a>
+    </div>
+     
+    <script src="scripts.js"></script>      
+</body>
+</html>
